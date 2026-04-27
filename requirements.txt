@@ -4,6 +4,6 @@ numpy
 pillow
 opencv-python
 matplotlib
-ultralytics
+
 gunicorn
 werkzeug
