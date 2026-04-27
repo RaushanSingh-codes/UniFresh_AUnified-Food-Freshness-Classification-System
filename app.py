@@ -8,7 +8,13 @@ app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
 # -------------------- MODEL --------------------
-model = tf.keras.models.load_model("final_food_freshness.keras", compile=False)
+
+
+model = tf.keras.models.load_model(
+    "final_food_freshness.keras",
+    compile=False,
+    safe_mode=False
+)
 
 IMG_SIZE = (224, 224)
 UPLOAD = "static/uploads"
