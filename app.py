@@ -13,7 +13,7 @@ app.secret_key = "supersecretkey"
 model = tf.keras.models.load_model(
     "final_model.h5",
     compile=False,
-    
+    safe_mode=False
 )
 
 IMG_SIZE = (224, 224)

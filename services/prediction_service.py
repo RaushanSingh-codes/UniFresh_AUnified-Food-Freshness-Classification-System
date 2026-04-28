@@ -8,7 +8,7 @@ IMG_SIZE = (224, 224)
 model = tf.keras.models.load_model(
     "final_model.h5",
     compile=False,
-    
+    safe_mode=False
 )
 
 
