@@ -4,7 +4,12 @@ from PIL import Image
 
 IMG_SIZE = (224, 224)
 
-model = tf.keras.models.load_model("final_food_freshness.keras", compile=False)
+
+model = tf.keras.models.load_model(
+    "final_food_freshness.keras",
+    compile=False,
+    safe_mode=False
+)
 
 
 def preprocess(path):
