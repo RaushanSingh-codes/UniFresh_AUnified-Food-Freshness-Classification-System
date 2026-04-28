@@ -8,7 +8,6 @@ __pycache__/
 static/uploads/
 static/heatmaps/
 
-*.keras
-*.h5
+
 
 .DS_Store
