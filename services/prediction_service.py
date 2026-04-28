@@ -6,9 +6,9 @@ IMG_SIZE = (224, 224)
 
 
 model = tf.keras.models.load_model(
-    "final_food_freshness.keras",
+    "final_model.h5",
     compile=False,
-    safe_mode=False
+    
 )
 
 

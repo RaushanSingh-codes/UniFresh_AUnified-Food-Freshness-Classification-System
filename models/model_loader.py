@@ -3,7 +3,7 @@ import tensorflow as tf
 def load_model():
     print("🔥 Loading ML model...")
     return tf.keras.models.load_model(
-        "final_food_freshness.keras",
+        "final_model.h5",
         compile=False,
-        safe_mode=False
+        
     )

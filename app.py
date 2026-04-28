@@ -11,9 +11,9 @@ app.secret_key = "supersecretkey"
 
 
 model = tf.keras.models.load_model(
-    "final_food_freshness.keras",
+    "final_model.h5",
     compile=False,
-    safe_mode=False
+    
 )
 
 IMG_SIZE = (224, 224)
