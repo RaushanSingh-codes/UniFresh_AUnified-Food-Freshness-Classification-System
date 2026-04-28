@@ -3,6 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os, uuid, base64
+import os
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
@@ -191,4 +192,6 @@ def predict_camera():
 
 # -------------------- RUN --------------------
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    debug = os.environ.get("DEBUG", "False") == "True"
+    app.run(host="0.0.0.0", port=port, debug=debug)
